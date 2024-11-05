@@ -11,7 +11,7 @@ export default function AdvantagesContainer() {
       <h2 className="title">Why Choose Us?</h2>
       <div className={s.container}>
         {advantages.map((el) => (
-          <AdvantageCard key={el.key} {...el} />
+          <AdvantageCard key={el.id} {...el} />
         ))}
       </div>
     </div>

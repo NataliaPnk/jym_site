@@ -4,7 +4,7 @@ import MembershipContainer from '../MembershipContainer'
 export default function MembershipSection() {
 
   return (
-    <div>
+    <div className='section'>
       <MembershipContainer />
     </div>
   )

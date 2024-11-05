@@ -7,20 +7,19 @@
 .wrapper {
   max-width: 1000px;
   width: 100%;
-  min-height: 600px;
+  min-height: 500px;
 }
 
 .section {
-  padding: 20px 90px;
+  padding: 20px 90px 50px 90px;
   background-color: rgb(19, 14, 14);
 
   font-family: "Nunito", sans-serif;
   color: aliceblue;
-  font-weight: 500;
 }
 
 .title {
   font-size: 30px;
   padding-bottom: 20px;
-  padding-top: 50px;
+  padding-top: 80px;
 }

@@ -1,0 +1,17 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 50px;
+  padding-top: 50px;
+}
+
+.titleMember {
+  color: aliceblue;
+  font-size: 30px;
+  padding-bottom: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
