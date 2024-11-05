@@ -13,10 +13,17 @@
 .container button {
   width: 120px;
   height: 40px;
-  border: none;
-  border-radius: 50px;
   background-color: rgb(153, 8, 8);
   margin-top: 40px;
+  
+  border: none;
+  border-radius: 50px;
+
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
 }
 
 .container img {

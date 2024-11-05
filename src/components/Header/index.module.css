@@ -26,3 +26,11 @@
   display: flex;
   gap: 20px;
 }
+
+.header > div > div > p {
+  cursor: pointer;
+}
+
+.header > div > div > p:hover {
+  color: rgb(153, 8, 8);
+}

@@ -4,7 +4,7 @@ import AdvantagesContainer from '../AdvantagesContainer'
 export default function AdvantagesSection() {
 
   return (
-    <div>
+    <div className='section'>
       <AdvantagesContainer />
     </div>
   )
