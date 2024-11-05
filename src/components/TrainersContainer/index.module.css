@@ -1,0 +1,17 @@
+.containerTrainer {
+  display: flex;
+  flex-direction: column;
+
+  display: grid;
+  grid-template-columns: repeat( 4, 1fr );
+  gap: 30px;
+}
+
+.titleTrainers {
+  font-size: 30px;
+  padding-bottom: 90px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

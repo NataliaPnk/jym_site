@@ -10,17 +10,19 @@ import TrainersSection from "./components/TrainersSection";
 import { advantagesData } from "./data/advantagesData";
 import { Context } from "./context";
 import { membershipData } from "./data/membershipData";
+import { trainersData } from "./data/trainersData";
 
 function App() {
 
 const [ advantages, setAdvantages ] = useState(advantagesData)
 const [ memberships, setMemberships ] = useState(membershipData)
+const [ trainers, setTrainers ] = useState(trainersData)
 
 
 
   return (
     <div>
-      <Context.Provider value={{ advantages, memberships }}>
+      <Context.Provider value={{ advantages, memberships, trainers }}>
       <Header />
       <MainSection />
       <AdvantagesSection />

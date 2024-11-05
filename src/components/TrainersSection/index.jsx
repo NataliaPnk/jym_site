@@ -4,7 +4,7 @@ import TrainersContainer from '../TrainersContainer'
 export default function TrainersSection() {
 
   return (
-    <div>
+    <div className='section'>
       <TrainersContainer />
     </div>
   )

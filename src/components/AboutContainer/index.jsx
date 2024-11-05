@@ -6,7 +6,7 @@ export default function AboutContainer() {
     <div className="wrapper">
       <div className={s.containerAbout}>
         <div>
-          <h2>About us</h2>
+          <h2>About Us</h2>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum vero
             nobis atque iure impedit accusamus omnis velit eaque sit nam facere
