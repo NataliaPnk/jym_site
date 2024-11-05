@@ -1,0 +1,29 @@
+.header {
+  background-color: pink;
+  padding: 20px 90px;
+
+  background-color: rgb(34, 20, 20);
+
+}
+
+.header > div {
+  max-width: 1000px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-family: "Nunito", sans-serif;
+  color: aliceblue;
+  font-size: 18px;
+  font-weight: 500;
+} 
+
+.header svg {
+  color: red;
+}
+
+.header div {
+  display: flex;
+  gap: 20px;
+}
