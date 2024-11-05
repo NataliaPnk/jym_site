@@ -4,7 +4,7 @@ import AboutContainer from '../AboutContainer'
 export default function AboutSection() {
 
   return (
-    <div>
+    <div className='section'>
       <AboutContainer />
     </div>
   )

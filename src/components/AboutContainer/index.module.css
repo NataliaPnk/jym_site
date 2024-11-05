@@ -1,0 +1,29 @@
+.containerAbout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding-top: 120px;
+}
+
+.containerAbout > div {
+  padding-bottom: 30px;
+}
+
+.containerAbout > div > h2 {
+  font-size: 30px;
+  padding-bottom: 30px;
+}
+
+.containerAbout > div > p {
+  font-size: 16px;
+}
+
+.containerAbout > img {
+  width: 600px;
+  height: 350px;
+  object-fit: contain;
+
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
