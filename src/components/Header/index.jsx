@@ -7,7 +7,7 @@ export default function Header() {
     <div className={s.header}>
       <div>
         <div>
-          <span>GYM</span>
+          <span>FlexFit <span>Gym</span></span>
           <MdOutlineSportsGymnastics />
         </div>
 

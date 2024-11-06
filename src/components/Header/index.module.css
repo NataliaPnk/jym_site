@@ -17,6 +17,14 @@
   font-weight: 500;
 }
 
+.header > div > div > span {
+  color: rgb(153, 8, 8);
+}
+
+.header > div > div > span > span {
+  color: aliceblue;
+}
+
 .header svg {
   color: rgb(153, 8, 8);
 }

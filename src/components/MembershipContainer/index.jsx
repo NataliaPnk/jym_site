@@ -9,7 +9,7 @@ export default function MembershipContainer() {
 
   return (
     <div className='wrapper'>
-      <h2 className={s.titleMember}>Gym Membership</h2>
+      <h2 className={s.titleMember}>Gym Membership Plans</h2>
       <div className={s.container}>
         {
           memberships.map(el => <MembershipCard key={el.id} {...el} />)

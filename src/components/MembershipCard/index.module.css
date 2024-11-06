@@ -1,11 +1,15 @@
 .cardMember {
+  max-width: 400px;
+  min-height: 440px;
+
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
 
-  gap: 30px;
-  padding: 20px 0;
+  gap: 20px;
+  padding: 10px 0;
+  position: relative;
 
   border: 1px solid rgb(10, 9, 9);
   border-radius: 8px;
@@ -42,7 +46,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 5px 0;
+  padding: 10px 20px 10px 40px;
 }
 
 .cardMember > div > div > p {
@@ -64,6 +68,12 @@
   background-color: rgb(153, 8, 8);
   box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
   cursor: pointer;
+
+  position: absolute;
+  bottom: 5%;
 }
 
-
+.cardMember > div > div > svg {
+  width: 20px;
+  height: 20px;
+}

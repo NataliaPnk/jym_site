@@ -13,8 +13,8 @@ export default function MembershipCard({
   return (
     <div className={s.cardMember}>
       <div>
-        <h3>{title}</h3>
-        <span>{price} $ </span>
+        <h3>Plan: {title}</h3>
+        <span>${price}/month </span>
       </div>
 
       <div className={s.line}></div>
@@ -22,7 +22,7 @@ export default function MembershipCard({
       <div>
         <div>
           {" "}
-          <FaRegCheckCircle /> <p>{fact01}</p>{" "}
+          <FaRegCheckCircle /> <p>Access: {fact01}</p>{" "}
         </div>
         <div>
           {" "}
