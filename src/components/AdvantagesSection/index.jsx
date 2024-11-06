@@ -1,11 +1,14 @@
 import React from 'react'
 import AdvantagesContainer from '../AdvantagesContainer'
 
-export default function AdvantagesSection() {
+const AdvantagesSection = React.forwardRef((_, ref) => {
 
   return (
-    <div className='section'>
+    <section ref={ref} className='section'>
       <AdvantagesContainer />
-    </div>
+    </section>
   )
-}
+})
+
+
+export default AdvantagesSection;

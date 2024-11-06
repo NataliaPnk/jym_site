@@ -52,6 +52,11 @@
   padding: 5px 0;
 }
 
+.footer > div > div > div:last-child > svg:hover {
+  color: rgb(48, 85, 233);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px;
+}
+
 .footer h4 {
   padding: 10px 0;
   font-size: 18px;

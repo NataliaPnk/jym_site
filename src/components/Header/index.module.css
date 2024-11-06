@@ -3,7 +3,7 @@
   background-color: rgb(19, 14, 14);
 }
 
-.header > div {
+.header > nav {
   max-width: 1000px;
   width: 100%;
 
@@ -17,11 +17,11 @@
   font-weight: 500;
 }
 
-.header > div > div > span {
+.header > nav > div > span {
   color: rgb(153, 8, 8);
 }
 
-.header > div > div > span > span {
+.header > nav > div > span > span {
   color: aliceblue;
 }
 
@@ -34,10 +34,10 @@
   gap: 20px;
 }
 
-.header > div > div > p {
+.header > nav > div > p {
   cursor: pointer;
 }
 
-.header > div > div > p:hover {
+.header > nav > div > p:hover {
   color: rgb(153, 8, 8);
 }

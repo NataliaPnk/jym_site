@@ -1,11 +1,12 @@
-import React from 'react'
-import TrainersContainer from '../TrainersContainer'
+import React from "react";
+import TrainersContainer from "../TrainersContainer";
 
-export default function TrainersSection() {
-
+const TrainersSection = React.forwardRef((_, ref) => {
   return (
-    <div className='section'>
+    <section ref={ref} className="section">
       <TrainersContainer />
-    </div>
-  )
-}
+    </section>
+  );
+});
+
+export default TrainersSection;

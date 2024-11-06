@@ -1,11 +1,13 @@
 import React from 'react'
 import AboutContainer from '../AboutContainer'
 
-export default function AboutSection() {
+const AboutSection = React.forwardRef((_, ref) => {
 
   return (
-    <div className='section'>
+    <section ref={ref} className='section'>
       <AboutContainer />
-    </div>
+    </section>
   )
-}
+})
+
+export default AboutSection;

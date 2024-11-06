@@ -1,11 +1,13 @@
 import React from 'react'
 import MembershipContainer from '../MembershipContainer'
 
-export default function MembershipSection() {
+const MembershipSection = React.forwardRef((_, ref) => {
 
   return (
-    <div className='section'>
+    <section ref={ref} className='section'>
       <MembershipContainer />
-    </div>
+    </section>
   )
-}
+})
+
+export default MembershipSection;

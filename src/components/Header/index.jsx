@@ -2,22 +2,22 @@ import React from "react";
 import s from "../Header/index.module.css";
 import { MdOutlineSportsGymnastics } from "react-icons/md";
 
-export default function Header() {
+export default function Header({ onNavigate }) {
   return (
-    <div className={s.header}>
-      <div>
+    <header className={s.header}>
+      <nav>
         <div>
           <span>FlexFit <span>Gym</span></span>
           <MdOutlineSportsGymnastics />
         </div>
 
         <div>
-          <p>Advantages</p>
-          <p>Membership</p>
-          <p>About</p>
-          <p>Trainers</p>
+          <p onClick={() => onNavigate('advantages')}>Advantages</p>
+          <p onClick={() => onNavigate('membership')}>Membership</p>
+          <p onClick={() => onNavigate('about')}>About</p>
+          <p onClick={() => onNavigate('trainers')}>Trainers</p>
         </div>
-      </div>
-    </div>
+      </nav>
+    </header>
   );
 }
