@@ -11,11 +11,23 @@ import { advantagesData } from "./data/advantagesData";
 import { Context } from "./context";
 import { membershipData } from "./data/membershipData";
 import { trainersData } from "./data/trainersData";
+import { sliderData } from "./data/sliderData";
 
 function App() {
   const [advantages, setAdvantages] = useState(advantagesData);
   const [memberships, setMemberships] = useState(membershipData);
   const [trainers, setTrainers] = useState(trainersData);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const goToNext = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % sliderData.length);
+  };
+
+  const goToPrevious = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? sliderData.length - 1 : prevIndex - 1
+    );
+  };
 
   const mainRef = useRef(null);
   const advantagesRef = useRef(null);
@@ -47,7 +59,17 @@ function App() {
 
   return (
     <div>
-      <Context.Provider value={{ advantages, memberships, trainers }}>
+      <Context.Provider
+        value={{
+          advantages,
+          memberships,
+          trainers,
+          currentIndex,
+          goToNext,
+          goToPrevious,
+          sliderData,
+        }}
+      >
         <Header onNavigate={scrollToSection} />
         <MainSection ref={mainRef} />
         <AdvantagesSection ref={advantagesRef} />

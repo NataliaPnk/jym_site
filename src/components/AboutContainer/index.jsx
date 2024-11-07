@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import s from "../AboutContainer/index.module.css";
+import { Context } from "../../context";
+import { FaArrowRight } from "react-icons/fa";
+import { FaArrowLeft } from "react-icons/fa";
 
 export default function AboutContainer() {
+
+
+const { currentIndex, goToNext, goToPrevious, sliderData } = useContext(Context)
+
+
   return (
     <div className="wrapper">
       <div className={s.containerAbout}>
@@ -20,7 +28,14 @@ export default function AboutContainer() {
             individual’s fitness journey.
           </p>
         </div>
-        <img src="https://images.unsplash.com/photo-1521804906057-1df8fdb718b7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+        <div>
+        <img src={sliderData[currentIndex]} alt="Slider" />
+        <div>
+        <FaArrowLeft onClick={goToNext} />
+        <FaArrowRight onClick={goToPrevious} />
+        </div>
+        
+        </div>
       </div>
     </div>
   );

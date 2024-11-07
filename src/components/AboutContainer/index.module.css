@@ -2,28 +2,44 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 50px;
+  gap: 80px;
   padding-top: 120px;
-}
-
-.containerAbout > div {
-  padding-bottom: 30px;
 }
 
 .containerAbout > div > h2 {
   font-size: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 25px;
 }
 
 .containerAbout > div > p {
   font-size: 16px;
 }
 
-.containerAbout > img {
-  width: 600px;
+.containerAbout > div > img {
+  width: 500px;
   height: 350px;
   object-fit: contain;
 
   border-radius: 8px;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  padding-bottom: 10px;
+}
+
+.containerAbout > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.containerAbout > div > div:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 25px;
+  padding-right: 20px;
+}
+
+.containerAbout > div > div > svg:first-child:hover,
+svg:last-child:hover {
+  color: rgb(27, 49, 135);
 }
