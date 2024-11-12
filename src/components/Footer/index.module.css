@@ -4,12 +4,9 @@
 }
 
 .footer > div {
-  max-width: 1000px;
   width: 100%;
-
   display: flex;
   justify-content: space-between;
-
   font-family: "Nunito", sans-serif;
   color: aliceblue;
   line-height: 20px;
@@ -61,4 +58,23 @@
   padding: 10px 0;
   font-size: 18px;
   font-weight: 600;
+}
+
+@media (max-width: 1000px) {
+  .footer {
+    padding: 30px 20px;
+  }
+  .footer > div {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 744px) {
+  .footer {
+    padding: 30px 10px;
+  }
+  .footer > div > div:first-child {
+    display: none;
+  }
 }

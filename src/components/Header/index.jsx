@@ -7,15 +7,17 @@ export default function Header({ onNavigate }) {
     <header className={s.header}>
       <nav>
         <div>
-          <span>FlexFit <span>Gym</span></span>
+          <span>
+            FlexFit <span>Gym</span>
+          </span>
           <MdOutlineSportsGymnastics />
         </div>
 
         <div>
-          <p onClick={() => onNavigate('advantages')}>Advantages</p>
-          <p onClick={() => onNavigate('membership')}>Membership</p>
-          <p onClick={() => onNavigate('about')}>About</p>
-          <p onClick={() => onNavigate('trainers')}>Trainers</p>
+          <p onClick={() => onNavigate("advantages")}>Advantages</p>
+          <p onClick={() => onNavigate("membership")}>Membership</p>
+          <p onClick={() => onNavigate("about")}>About</p>
+          <p onClick={() => onNavigate("trainers")}>Trainers</p>
         </div>
       </nav>
     </header>

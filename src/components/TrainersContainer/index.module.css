@@ -1,17 +1,38 @@
 .containerTrainer {
   display: flex;
   flex-direction: column;
-
   display: grid;
-  grid-template-columns: repeat( 4, 1fr );
+  grid-template-columns: repeat(4, 1fr);
   gap: 30px;
 }
 
 .titleTrainers {
   font-size: 30px;
-  padding-bottom: 90px;
-
+  padding-top: 70px;
+  padding-bottom: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 1000px) {
+  .containerTrainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+  }
+  .titleTrainers {
+    padding-bottom: 60px;
+  }
+}
+
+@media (max-width: 744px) {
+  .containerTrainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .titleTrainers {
+    padding-bottom: 40px;
+  }
 }

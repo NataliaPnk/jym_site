@@ -1,13 +1,12 @@
-import React from 'react'
-import MainContainer from '../MainContainer'
+import React from "react";
+import MainContainer from "../MainContainer";
 
 const MainSection = React.forwardRef((_, ref) => {
-
   return (
-    <section ref={ref} className='section'>
+    <section ref={ref} className="section">
       <MainContainer />
     </section>
-  )
-})
+  );
+});
 
 export default MainSection;

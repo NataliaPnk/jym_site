@@ -3,16 +3,17 @@
   align-items: center;
   justify-content: center;
   gap: 80px;
-  padding-top: 120px;
+  padding-top: 80px;
 }
 
 .containerAbout > div > h2 {
   font-size: 30px;
-  padding-bottom: 25px;
+  padding-bottom: 35px;
 }
 
 .containerAbout > div > p {
   font-size: 16px;
+  padding-bottom: 30px;
 }
 
 .containerAbout > div > img {
@@ -42,4 +43,35 @@
 .containerAbout > div > div > svg:first-child:hover,
 svg:last-child:hover {
   color: rgb(27, 49, 135);
+}
+
+@media (max-width: 1000px) {
+  .containerAbout {
+    gap: 50px;
+    padding-top: 60px;
+  }
+  .containerAbout > div > p {
+    font-size: 14px;
+  }
+  .containerAbout > div > img {
+    width: 400px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 744px) {
+  .containerAbout {
+    text-align: center;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .containerAbout > div > p {
+    font-size: 14px;
+  }
+  .containerAbout > div > div:last-child {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
 }
